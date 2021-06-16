@@ -18,7 +18,7 @@ class EditGradeState extends State<EditGrade>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 16,right: 16),
+      margin: EdgeInsets.only(left: 16,right: 10),
       padding: EdgeInsets.only(top: 22,bottom: 12),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,6 +28,7 @@ class EditGradeState extends State<EditGrade>{
             child: Row(
               children: <Widget>[
                 Text('${widget.userInfo.grade}'),
+                SizedBox(width: 3,),
                 Icon(Icons.arrow_forward_ios_rounded,size: 16,color : Colors.grey)
               ],
             ),

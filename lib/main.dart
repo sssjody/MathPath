@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'home/home.dart';
 
-
-
-
 void main() {
   SystemUiOverlayStyle systemUiOverlayStyle = SystemUiOverlayStyle(
       statusBarColor: Colors.transparent, //全局设置透明

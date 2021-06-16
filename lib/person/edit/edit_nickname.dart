@@ -28,7 +28,7 @@ class EditNickNameState extends State<EditNickName>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 16,right: 16),
+      margin: EdgeInsets.only(left: 16,right: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[

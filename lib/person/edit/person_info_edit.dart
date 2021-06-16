@@ -6,6 +6,7 @@ import 'package:study/person/edit/edit_age.dart';
 import 'package:study/person/edit/edit_gender.dart';
 import 'package:study/person/edit/edit_grade.dart';
 import 'package:study/person/edit/edit_location.dart';
+import 'package:study/person/edit/edit_school.dart';
 import 'package:study/person/model/model.dart';
 
 import 'edit_avatar.dart';
@@ -35,7 +36,8 @@ class PersonInfoEdit extends StatelessWidget{
                     height: 9,
                     color: Color(0xffececec),
                 ),
-                EditLocation(userInfo)
+                EditLocation(userInfo),
+                EditSchool(userInfo)
 
               ],
             ),

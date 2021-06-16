@@ -16,7 +16,7 @@ class EditLocationState extends State<EditLocation>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 16,right: 16),
+      margin: EdgeInsets.only(left: 16,right: 10),
       padding: EdgeInsets.only(top: 12),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -26,6 +26,7 @@ class EditLocationState extends State<EditLocation>{
             child: Row(
               children: <Widget>[
                 Text('${widget.userInfo.location}'),
+                SizedBox(width: 3,),
                 Icon(Icons.arrow_forward_ios_rounded,size: 16,color : Colors.grey)
               ],
             ),

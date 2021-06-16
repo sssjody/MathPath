@@ -18,7 +18,7 @@ class EditGenderState extends State<EditGender>{
   @override
   Widget build(BuildContext context) {
      return Container(
-       margin: EdgeInsets.only(left: 16,right: 16),
+       margin: EdgeInsets.only(left: 16,right: 10),
          padding: EdgeInsets.only(top: 22),
          child: Row(
              mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,6 +28,7 @@ class EditGenderState extends State<EditGender>{
                      child: Row(
                        children: <Widget>[
                          Text(widget.userInfo.sex ? '男' : '女'),
+                         SizedBox(width: 3,),
                          Icon(Icons.arrow_forward_ios_rounded,size: 16,color : Colors.grey)
                        ],
                      ),

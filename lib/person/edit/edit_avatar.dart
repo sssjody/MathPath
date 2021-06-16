@@ -18,7 +18,7 @@ class EditAvatarState extends State<EditAvatar>{
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 16,right: 16),
+      margin: EdgeInsets.only(left: 16,right: 10),
       padding: EdgeInsets.symmetric(vertical: 18),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -35,6 +35,7 @@ class EditAvatarState extends State<EditAvatar>{
                   child: Image.network(widget.userInfo.avatarUrl,fit:BoxFit.cover,),
                 ),
               ),
+              SizedBox(width: 3,),
               Icon(Icons.arrow_forward_ios_rounded,size: 16,color : Colors.grey)
             ],
           )
